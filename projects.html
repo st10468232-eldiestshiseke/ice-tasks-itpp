@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects | Eldies Tshiseke — IT Student Portfolio</title>
+  <meta
+    name="description"
+    content="Projects by Eldies Tshiseke, an aspiring software developer and IT student: a React Native menu-management app, a responsive portfolio website, and a UI/UX design project."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Eldies<span>Tshiseke</span></a>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">My Projects</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>My Projects</h1>
+        <p class="page-hero-lead">
+          A selection of academic and personal projects that show what I can build.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- ===== Project 1 ===== -->
+        <article class="project-card">
+          <!-- TODO: add a screenshot of the app as images/project-chef-app.png -->
+          <img
+            src="images/project-chef-app.png"
+            alt="Screenshot of the Christoffel menu-management mobile app showing the chef's menu screen"
+          />
+          <div class="project-info">
+            <h2>Christoffel &mdash; Private Chef Menu App</h2>
+            <p>
+              A cross-platform mobile application built for a private chef who needs to
+              update his menus for clients quickly. The chef can add and remove menu items
+              (dish name, description, course and price), and the home screen automatically
+              displays the full menu, the total number of items and the average price per
+              course. A separate guest view lets diners filter the menu by course, such as
+              starters, mains or desserts.
+            </p>
+            <ul class="tech-list">
+              <li>React Native</li>
+              <li>Expo Go</li>
+              <li>JavaScript</li>
+              <li>Cross-platform (Android &amp; iOS)</li>
+            </ul>
+            <div class="project-links">
+              <!-- TODO: replace with your real repository URL -->
+              <a class="btn btn-outline" href="https://github.com/st10468232-eldiestshiseke/christophellAApp" target="_blank" rel="noopener">
+                View the app repository on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Project 2 ===== -->
+        <article class="project-card">
+          <!-- TODO: add a screenshot of the website as images/project-portfolio.png -->
+          <img
+            src="images/project-portfolio.png"
+            alt="Screenshot of Eldies Tshiseke's responsive professional portfolio website homepage"
+          />
+          <div class="project-info">
+            <h2>Professional Digital Portfolio Website</h2>
+            <p>
+              The website you are browsing right now. A five-page responsive portfolio built
+              to professional standards: consistent navigation, semantic and accessible
+              HTML, mobile-friendly layouts and basic SEO practices such as descriptive page
+              titles, meta descriptions and image alt text. It is published with GitHub
+              Pages and connected to my GitHub and LinkedIn profiles.
+            </p>
+            <ul class="tech-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>GitHub Pages</li>
+            </ul>
+            <div class="project-links">
+              <!-- TODO: replace with your real URLs after publishing -->
+              <a class="btn btn-outline" href="https://github.com/st10468232-eldiestshiseke/ice-tasks-itpp" target="_blank" rel="noopener">
+                View the website repository on GitHub
+              </a>
+              <a class="btn btn-outline" href="https://github.com/st10468232-eldiestshiseke" target="_blank" rel="noopener">
+                Visit the live website
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Project 3 ===== -->
+        <!-- TODO: update this card once your PIXD5112 topic is finalised, then add screenshots -->
+        <article class="project-card">
+          <img
+            src="images/project-uiux-design.png"
+            alt="Preview of the user interface design project for the Principles of UI and UX Design module"
+          />
+          <div class="project-info">
+            <h2>UI/UX Design Project (In Progress)</h2>
+            <p>
+              A user-centred design project for the Principles of UI and UX Design module
+              (PIXD5112). The project follows the full design process: planning the
+              interface, applying UI/UX principles such as visual hierarchy, consistency and
+              accessibility, and refining the design based on user needs. Full details,
+              wireframes and screenshots will be added as the project develops.
+            </p>
+            <ul class="tech-list">
+              <li>UI/UX Design Principles</li>
+              <li>Wireframing &amp; Planning</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        &copy; <span id="year"></span> Eldies Tshiseke. Portfolio built with HTML, CSS and
+        JavaScript.
+      </p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub profile</a></li>
+        <li><a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn profile</a></li>
+        <li><a href="mailto:your.email@example.com">Email me</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,40 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Digital Portfolio of an Aspiring IT Professional and Software Developer showcasing Java, Kotlin, React Native, and SQL projects.">
-    <meta name="keywords" content="Aspiring Software Developer, IT Student, Java, Kotlin, React Native, SQL, Digital Portfolio, ITPP5112">
-    <meta name="author" content="Aspiring IT Professional">
-    <title>Professional Digital Portfolio | IT Student & Developer</title>
-    
-    <!-- Google Fonts & Font Awesome Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.comYou can break a simple interactive web project into separate HTML, CSS, and JavaScript files using the code below.
-
-### 1. `index.html`
-This file defines the structure of the webpage and links the CSS stylesheet and JS script.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Application</title>
-    <!-- Link external CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eldies Tshiseke | Aspiring Software Developer &amp; IT Student</title>
+  <meta
+    name="description"
+    content="Professional digital portfolio of Eldies Tshiseke, an aspiring software developer and IT student showcasing mobile app development, web development and UI/UX design projects."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Eldies<span>Tshiseke</span></a>
 
-    <div class="card">
-        <h1 id="title">Hello World</h1>
-        <p id="description">Click the button below to change the theme and update the content.</p>
-        <button id="actionBtn">Click Me</button>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">My Projects</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Link external JavaScript (placed before </body> for best performance) -->
-    <script src="script.js"></script>
+  <main>
+    <!-- Hero / introduction -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <!-- TODO: replace images/profile.jpg with your own professional photo -->
+        <img
+          src="images/profile.jpg"
+          alt="Professional photograph of Eldies Tshiseke, aspiring software developer and IT student"
+          class="profile-photo"
+          width="220"
+          height="220"
+        />
+        <div class="hero-text">
+          <p class="eyebrow">IT Student &middot; Aspiring Software Developer</p>
+          <h1>Eldies Tshiseke</h1>
+          <p class="lead">
+            I am an Information Technology student and aspiring software developer with a
+            strong interest in mobile application development and user-centred design. I
+            enjoy turning ideas into working digital products, and I am currently building my
+            skills in HTML, CSS, JavaScript, Java and React Native. My studies have taught me
+            that great software is about more than writing code &mdash; it is about solving
+            real problems for real people. I am passionate about creating clean, accessible
+            interfaces and reliable applications that make everyday tasks simpler. This
+            portfolio showcases the projects I have completed during my studies, the skills I
+            am developing, and my growth as a future IT professional. I am eager to keep
+            learning, keep building, and one day contribute meaningfully to the technology
+            industry in South Africa and beyond.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">View my projects</a>
+            <a href="contact.html" class="btn btn-outline">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career interests -->
+    <section class="section">
+      <div class="container">
+        <h2>Career Interests</h2>
+        <p class="section-intro">
+          These are the areas of Information Technology I am most passionate about and
+          actively developing my skills in.
+        </p>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Mobile App Development</h3>
+            <p>
+              Building cross-platform Android and iOS apps with React Native and Expo Go,
+              focused on practical tools that solve everyday problems.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Web Development</h3>
+            <p>
+              Creating clean, responsive and accessible websites with HTML, CSS and
+              JavaScript &mdash; like the portfolio you are browsing right now.
+            </p>
+          </article>
+          <article class="card">
+            <h3>UI/UX Design</h3>
+            <p>
+              Applying user-centred design principles so the apps and websites I build are
+              not only functional, but pleasant and intuitive to use.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        &copy; <span id="year"></span> Eldies Tshiseke. Portfolio built with HTML, CSS and
+        JavaScript.
+      </p>
+      <ul class="footer-links">
+        <!-- TODO: replace with your real GitHub and LinkedIn URLs -->
+        <li><a href="https://github.com/st10468232-eldiestshiseke" target="_blank" rel="noopener">GitHub profile</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn profile</a></li>
+        <li><a href="mailto:eldiestshiseke35@gmail.com">Email me</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
